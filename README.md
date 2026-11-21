@@ -60,9 +60,32 @@ Game designer and developer (team of two)
 - Problem solving
 
 ## What's in this repo
-- `GameManager1.cs`, `HoopTarget.cs`, `gameScore.cs`: the gameplay scripts (scoring, hoop trigger, score display)
-- `screen shots/`: editor screenshots and gameplay videos
-- `summary.pptx`: the project presentation
-- Audio tracks used in the game (free-to-use sources; not covered by the MIT licence)
 
-The full Unity project isn't included because of its size, so the scripts are here to read, not to open as a project.
+| Path | What it is |
+|---|---|
+| [`BasketVR-Toss/`](BasketVR-Toss) | The Unity project (Unity 2022.3.11f1, URP, XR Interaction Toolkit 3.0.3, OpenXR) |
+| [`BasketVR-Toss/Assets/0_Project-BasketVR Toss/`](BasketVR-Toss/Assets/0_Project-BasketVR%20Toss) | Main scene, gameplay scripts (`HoopTarget.cs`, `gameScore.cs`), score board, audio |
+| `BasketVR-Toss/Assets/GameManager1.cs` | Game manager script |
+| `BasketVR-Toss/Assets/Prefabs/` | XR Origin (XR Rig) and score UI canvas |
+| `screen shots/` | Editor screenshots and gameplay videos |
+| `summary.pptx` | The project presentation |
+
+The audio tracks are from free-to-use sources and aren't covered by the MIT licence.
+
+## Opening the project
+
+1. Install **Unity 2022.3.11f1** (any 2022.3 LTS should work) and open the `BasketVR-Toss` folder. Unity downloads the packages listed in `Packages/manifest.json`.
+2. Open `Assets/0_Project-BasketVR Toss/BasketVR Toss.unity`.
+
+**The third-party 3D models are not included.** They come from asset packs whose licences don't allow re-sharing them, and together they're over 800 MB. Without them, those objects show as missing in the scene. The scripts, XR setup, physics settings and layout all load. To get the full look, import these packs into `Assets/`:
+
+| Folder in the original project | Used for |
+|---|---|
+| `MarioParadiso` (Basketball Ring) | Hoop and net |
+| `Saritasa` (Sport Balls) | Basketball |
+| `ModernCartoonCar488` | Car prop |
+| `Outdoor bench` | Benches |
+| `devotid` (Folding Table and Chair) | Table and grabbable chairs |
+| `Gwangju_3D asset` | Trees |
+| `Mini Toon Office` | Small props |
+| `Abandoned World` (Wood Box Free) | Wood box |
