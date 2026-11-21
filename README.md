@@ -70,7 +70,7 @@ Game designer and developer (team of two)
 | `screen shots/` | Editor screenshots and gameplay videos |
 | `summary.pptx` | The project presentation |
 
-The audio tracks are from free-to-use sources and aren't covered by the MIT licence.
+The audio tracks are from free-to-use sources.
 
 ## Opening the project
 
